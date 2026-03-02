@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>단축 URL 생성</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <form onsubmit="return createShortenurl();">
+    <div class="nav-bar">
+        <a href="/ui/create-shortenurl.html">단축 URL 생성</a><br>
+        <a href="/ui/get-shortenurl-info.html">단축 URL 단건 정보 조회</a><br>
+        <a href="/ui/get-shortenurl-info-list.html">단축 URL 전체 조회</a><br>
+    </div>
+    <form onsubmit="return createShortenurl();" style="
+    outline: 3px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+">
         <input type="url" id="url-input">
         <input type="submit">
     </form>
